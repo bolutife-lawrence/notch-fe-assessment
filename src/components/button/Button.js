@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import buttonTypes from "./types";
+import { globalPropTypes } from '../../utils';
+
 import './style.scss';
 
 const Button = ({ children, size, type, ...props }) => (
@@ -8,8 +10,17 @@ const Button = ({ children, size, type, ...props }) => (
 );
 
 Button.defaultProps = {
-  type: buttonTypes.primary,
+  type: 'primary',
   size: 'medium',
+}
+
+Button.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+  ]),
+  size: globalPropTypes.size,
+  type: PropTypes.oneOf(['primary']), // Will be updated as more button types are added
 }
 
 export default Button;
