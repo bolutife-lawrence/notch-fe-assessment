@@ -6,7 +6,7 @@ import { Orders } from './pages';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Orders />
     </div>
