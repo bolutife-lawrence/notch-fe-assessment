@@ -8,6 +8,7 @@ import {
   selectSupplierNames,
   selectFilters,
   selectAreFiltersActive,
+  selectIsRequestingOrders,
 } from "../../../../store/orders";
 import { Button, SelectInput } from '../../../../components';
 
@@ -18,6 +19,7 @@ const Filters = () => {
   const suppliers = useSelector(selectSupplierNames);
   const filters = useSelector(selectFilters);
   const areFiltersActive = useSelector(selectAreFiltersActive);
+  const isRequestingOrders = useSelector(selectIsRequestingOrders);
 
   const supplierSelectOptions = suppliers.map((name) => ({ label: name, value: name }));
 
@@ -51,6 +53,7 @@ const Filters = () => {
             value={
               supplierFilterValue ? ({ label: supplierFilterValue, value: supplierFilterValue }) : null
             }
+            isLoading={isRequestingOrders}
           />
         </div>
 
