@@ -1,6 +1,8 @@
 import React from 'react';
 import Select from 'react-select';
 
+import { globalPropTypes } from '../../utils';
+
 import './style.scss';
 
 const SelectInput = ({ label, size, ...props }) => (
@@ -11,7 +13,11 @@ const SelectInput = ({ label, size, ...props }) => (
 );
 
 SelectInput.defaultProps = {
-  size: 'medium'
+  size: 'medium',
+}
+
+SelectInput.propTypes = {
+  size: globalPropTypes.size,
 }
 
 export default SelectInput;

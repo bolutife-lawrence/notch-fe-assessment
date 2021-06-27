@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './style.scss';
 
@@ -11,5 +12,9 @@ const Date = ({ children: dateString }) => (
     {new LibDate(dateString).toLocaleDateString('en-US', defaultDateOptions)}
   </span>
 );
+
+Date.propTypes = {
+  children: PropTypes.string.isRequired,
+}
 
 export default Date;
