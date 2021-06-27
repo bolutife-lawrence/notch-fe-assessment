@@ -1,0 +1,36 @@
+@import 'src/scss/variables';
+
+$base-button-height: 2rem;
+
+.Button {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+
+  &:disabled {
+    background-color: $grey;
+    cursor: not-allowed;
+  }
+
+  // Button Sizes
+  &--small-size {
+    height: $base-button-height;
+  }
+
+  &--medium-size {
+    height: $base-button-height + 1;
+  }
+
+  &--large-size {
+    height: $base-button-height + 2;
+  }
+
+  &--primary {
+    background-color: $daintree;
+    color: #ffffff;
+  }
+}

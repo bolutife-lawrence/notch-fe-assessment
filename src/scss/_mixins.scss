@@ -1,0 +1,20 @@
+@import 'variables';
+
+@mixin height-and-width($height, $width) {
+  height: #{$height};
+  width: #{$width};
+}
+
+// Media Query Mixins
+// Bhttps://zellwk.com/blog/media-query-units/
+@mixin for-tablet-screens {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-desktop-screens {
+  @media only screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

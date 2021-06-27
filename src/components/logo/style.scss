@@ -1,0 +1,18 @@
+@import 'src/scss/mixins';
+
+$base-logo-height: 2rem;
+$base-logo-width: 4rem;
+
+.Logo {
+  &--small-size {
+    @include height-and-width($base-logo-height, $base-logo-width);
+  }
+
+  &--medium-size {
+    @include height-and-width($base-logo-height + 2, $base-logo-width + 2);
+  }
+
+  &--large-size {
+    @include height-and-width($base-logo-height + 3, $base-logo-width + 3);
+  }
+}

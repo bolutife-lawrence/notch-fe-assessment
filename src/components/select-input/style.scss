@@ -1,0 +1,35 @@
+@import 'src/scss/variables';
+
+.SelectInput {
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    width: 100%;
+    height: inherit;
+  }
+
+  &__control {
+    height: 100%;
+
+    &--is-focused {
+      border-color: $brand-color !important;
+    }
+  }
+
+  // TODO: Create mixins for component sizes
+  &--small-size {
+    height: 2rem;
+  }
+
+  &--medium-size {
+    height: 3rem;
+  }
+
+  &--large-size {
+    height: 4rem;
+  }
+}

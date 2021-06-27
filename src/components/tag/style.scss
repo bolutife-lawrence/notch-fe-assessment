@@ -1,0 +1,40 @@
+@import 'src/scss/variables';
+
+.Tag {
+  display: inline-flex;
+  padding: .1rem .6rem;
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: $black;
+
+  &--squared {
+    border-radius: 3px;
+    padding: .1rem .3rem;
+  }
+
+  &--rounded {
+    border-radius: 9999px;
+  }
+
+  &--melrose-color {
+    background-color: $melrose;
+  }
+
+  &--sinbad-color {
+    background-color: $sinbad;
+  }
+
+  &--beltic-sea-color {
+    background-color: $beltic-sea;
+    color: $white;
+  }
+
+  &--platinum-color {
+    background-color: $platinum;
+  }
+
+  &--paris-daisy-color {
+    background-color: $paris-daisy;
+  }
+}

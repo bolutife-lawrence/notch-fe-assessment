@@ -1,0 +1,38 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+.Filters {
+  background-color: $white-smoke;
+  width: 100%;
+
+  &__inner {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    display: flex;
+
+    @include for-tablet-screens() {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    @include for-desktop-screens() {
+      max-width: $page-content-max-with;
+      margin: 0 auto;
+    }
+  }
+
+  &__supplier {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @include for-tablet-screens() {
+      margin-right: 1rem;
+      margin-bottom: unset;
+      width: 60%;
+    }
+
+    @include for-desktop-screens() {
+      width: 40%;
+    }
+  }
+}

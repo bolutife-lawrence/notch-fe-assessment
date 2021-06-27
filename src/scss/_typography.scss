@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'functions';
+
+html {
+  font-family: $base-font-family;
+  color: $primary-text-color;
+  font-size: em($base-font-size - 2);
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    font-size: em($base-font-size - 1);
+  }
+
+  @media only screen and (min-width: $desktop-breakpoint) {
+    font-size: em($base-font-size);
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Utility text styles
+.bold-text {
+  font-weight: bold;
+}
+
+.bold-text-500 {
+  font-weight: 500;
+}

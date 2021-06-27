@@ -1,0 +1,28 @@
+@import '~normalize-scss/sass/normalize/_variables.scss';
+
+// Fonts
+$base-font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+
+// Colors
+$brand-color: #3F037E;
+$primary-text-color: #7D9B9E;
+$black: rgba(51, 51, 51, 1);
+$white: #ffffff;
+$grey: #9EA8A9;
+$white-smoke: #F5F5F5;
+$daintree: #00282C;
+$melrose: #C5C3FF;
+$sinbad: #A5DFCA;
+$beltic-sea: #3E3E3E;
+$paris-daisy: #FFEB4C;
+$platinum: #DFE2E2;
+
+// Breakpoints
+$tablet-breakpoint: 27.1em;
+$desktop-breakpoint: 48.1em;
+
+// Sizes
+$header-height: 5rem;
+$page-content-max-with: 75rem;

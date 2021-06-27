@@ -1,0 +1,9 @@
+@import 'src/scss/variables';
+
+.Header {
+  background-color: $brand-color;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

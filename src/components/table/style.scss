@@ -1,0 +1,39 @@
+@import 'src/scss/mixins';
+@import 'src/scss/variables';
+
+.TableContainer {
+  overflow-x: auto;
+
+  &__table {
+    border-width: 0;
+    text-indent: 0;
+    border-color: rgba(229,231,235,1);
+    border-collapse: collapse;
+    min-width: 100%;
+  }
+
+  &__table-header {
+    background-color: $white-smoke;
+  }
+
+  &__table-row {
+    border: solid;
+    border-width: 1px 0;
+    border-color: inherit;
+  }
+
+  &__table-column-header {
+    padding: .75rem 1.5rem;
+    text-align: left;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: rgba(107,114,128,1);
+  }
+
+  &__table-cell {
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    font-weight: inherit;
+  }
+}
