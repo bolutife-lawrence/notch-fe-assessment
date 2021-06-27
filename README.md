@@ -1,3 +1,8 @@
+## Areas For Improvement
+- Make `Filters` and  `OrdersList` table header section sticky for easier accessibility as user scrolls through the long list of orders.
+  Also, pagination might help reduce overloading the user with so many items to go through per time.
+- Ability to sort orders per table column.
+  
 ## Available Scripts
 
 In the project directory, you can run:
