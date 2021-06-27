@@ -1,0 +1,9 @@
+@import 'src/scss/mixins';
+
+$preloader-size: 4rem;
+
+.Preloader {
+  display: block;
+  margin: 3rem auto 0;
+  @include height-and-width($preloader-size, $preloader-size);
+}

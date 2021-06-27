@@ -18,3 +18,5 @@ export const selectFilters = ({ orders: { filters } }) => filters;
 export const selectAreFiltersActive = ({ orders: { filters } }) => (
   Boolean(Object.values(filters).length)
 )
+
+export const selectIsRequestingOrders = ({ orders: { isRequesting } }) => isRequesting;

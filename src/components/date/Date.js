@@ -6,9 +6,9 @@ const LibDate = window.Date;
 
 const defaultDateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
 
-const Date = ({ children: date }) => (
+const Date = ({ children: dateString }) => (
   <span>
-    {new LibDate(date).toLocaleDateString('en-US', defaultDateOptions)}
+    {new LibDate(dateString).toLocaleDateString('en-US', defaultDateOptions)}
   </span>
 );
 

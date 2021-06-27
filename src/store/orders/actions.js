@@ -12,7 +12,7 @@ export const {
 
 export const requestOrders = () => async (dispatch) => {
   try {
-    dispatch(ordersRequesting);
+    dispatch(ordersRequesting());
 
     const orders = await fetch(`${BASE_API_URL}/orders/search`,{
       method: 'POST',

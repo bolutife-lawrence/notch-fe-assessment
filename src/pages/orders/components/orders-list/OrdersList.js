@@ -1,18 +1,23 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { selectOrders } from '../../../../store/orders';
+import { selectOrders, selectIsRequestingOrders } from '../../../../store/orders';
 
 import { Date, Table, Tag } from '../../../../components';
+
+import OrdersPreLoader from '../pre-loader';
 
 import './style.scss';
 
 const OrdersList = () => {
   const orders = useSelector(selectOrders);
+  const isRequesting = useSelector(selectIsRequestingOrders);
 
   return (
     <div className="OrderList">
-      <Table>
+      {isRequesting && <OrdersPreLoader />}
+
+      {!isRequesting && <Table>
         <Table.Header>
           <Table.Row>
             <Table.ColumnHeader><h3>Status</h3></Table.ColumnHeader>
@@ -25,7 +30,7 @@ const OrdersList = () => {
         <Table.Body>
           {orders.map(renderOrder)}
         </Table.Body>
-      </Table>
+      </Table>}
     </div>
   );
 }
