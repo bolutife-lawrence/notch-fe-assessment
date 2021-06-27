@@ -13,7 +13,7 @@ const Orders = () => {
   }, [dispatch]);
 
   return (
-    <div className="">
+    <div>
       <Filters />
       <OrdersList />
     </div>
