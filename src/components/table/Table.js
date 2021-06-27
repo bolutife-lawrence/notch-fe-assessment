@@ -5,22 +5,23 @@ import { extendClassName } from '../../utils';
 import './style.scss';
 
 // TODO: Children Type validation
-const Table = ({ children }) => (
+
+const Table = ({ children, className }) => (
   <div className="TableContainer">
-    <table className="TableContainer__table">
+    <table className={extendClassName('TableContainer__table', className)}>
       {children}
     </table>
   </div>
 );
 
-const Header = ({ children }) => (
-  <thead className="TableContainer__table-header">
+const Header = ({ children, className }) => (
+  <thead className={extendClassName('TableContainer__table-header', className)}>
     {children}
   </thead>
 );
 
-const ColumnHeader = ({ children }) => (
-  <th scope="col" className="TableContainer__table-column-header">
+const ColumnHeader = ({ children, className }) => (
+  <th scope="col" className={extendClassName('TableContainer__table-column-header', className)}>
     {children}
   </th>
 );
