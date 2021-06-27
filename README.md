@@ -2,6 +2,7 @@
 - Make `Filters` and  `OrdersList` table header section sticky for easier accessibility as user scrolls through the long list of orders.
   Also, pagination might help reduce overloading the user with so many items to go through per time.
 - Ability to sort orders per table column.
+- Control sizes of reusable components(Button, SelectInput, etc.) from a central location (using global SASS variables).
   
 ## Available Scripts
 
